@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </head>
+
+  <header>
+    <a href="main.html">
+      <button type="button" id="Home_btn">Home</button>
+    </a>
+
+    <a href="login.html">
+      <button type="button" id="Logout_btn">Logout</button>
+    </a>
+  </header>
+
+  <body>
+    <div id="Gen_div">
+    <h2>Add New</h2>
+    <form action="/action_page.php">
+      <p>
+        <label for="fname">ID:ㅤ</label>
+        <input type="text" name="id" value="00000"><br><br>
+      </p>
+      <p>
+        <label for="fname">Name:</label>
+        <input type="text" name="name" value="Gas Detector"><br><br>
+      </p>
+      <p>
+        <label for="fname">Type:</label>
+        <input type="text" name="type: " value="Dectector"><br><br>
+      </p>
+      <p>
+        <label for="fname">Location:</label>
+        <select name="location" id="location">
+        <option value="NSW">NSW</option>
+        <option value="SA">SA</option>
+        <option value="ACT">ACT</option>
+        <option value="NT">NT</option>
+        <option value="WA">WA</option>
+        <option value="VIC">VIC</option>
+        <option value="QLD">QLD</option>
+        </select><br><br>
+      </p>
+      <p>
+        <label for="fname">Last Calib.</label>
+        <input type="date" name="type: " value="John"><br><br>
+      </p>
+      <p>
+        <label for="fname">Next Calib.</label>
+        <input type="date" name="type: " value="John"><br><br>
+      </p>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+  </body>
+</html>
